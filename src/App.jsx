@@ -1,10 +1,11 @@
-import { DerivAPI } from "@deriv/deriv-api";
+import  DerivAPI  from "@deriv/deriv-api";
 import DerivAPIBasic from '@deriv/deriv-api/dist/DerivAPIBasic';
 
 function App() {
 
 
-  const api = new DerivAPIBasic({app_id: 35983 });
+  const connection = new WebSocket('wss://frontend.binaryws.com/websockets/v3?l=EN&app_id=35983');
+  const api = new DerivAPIBasic({ connection });
   console.log(api)
 
   return (
