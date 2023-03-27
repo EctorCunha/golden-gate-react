@@ -1,7 +1,7 @@
 import { DerivAPI } from "@deriv/deriv-api";
 import DerivAPIBasic from '@deriv/deriv-api/dist/DerivAPIBasic';
 
-function App({args}) {
+function App() {
 
 
   const api = new DerivAPIBasic({app_id: 35983 });
@@ -15,11 +15,17 @@ function App({args}) {
       <table>
         <tr>
           <th>Tipo</th>
+          <td>{}</td>
           <th>Entrada</th>
+          <td>{}</td>
           <th>Saida</th>
+          <td>{}</td>
           <th>Valor de Compra</th>
+          <td>{}</td>
           <th>Lucro/Perda</th>
+          <td>{}</td>
           <th>Status</th>
+          <td>{}</td>
           </tr>
       </table>
     </div>
