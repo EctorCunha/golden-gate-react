@@ -10,8 +10,11 @@
   },
   "dependencies": {
     "@deriv/deriv-api": "^1.0.11",
+    "googleapis": "^114.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-use-websocket": "^4.3.1",
+    "socket.io-client": "^4.6.1",
     "ws": "^8.13.0"
   },
   "devDependencies": {
